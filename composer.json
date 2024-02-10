@@ -1,13 +1,12 @@
 {
   "name": "spizian/laravel-wizard-installer",
   "description": "Laravel wizard installer package",
-  "homepage": "https://spizian.github.io/laravel-wizard-installer/",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "David Cortés",
-      "email": "spizian@spizian.com"
+      "name": "Adi miuprix",
+      "email": "adimiuprix@gmail.com"
     }
   ],
   "autoload": {
