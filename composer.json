@@ -1,6 +1,6 @@
 {
-  "name": "spizian/laravel-wizard-installer",
-  "description": "Laravel wizard installer package",
+  "name": "spizian/wizardtube",
+  "description": "Wizard installation for laravel application",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -38,7 +38,7 @@
       ]
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "config": {
     "allow-plugins": {
