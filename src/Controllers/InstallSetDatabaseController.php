@@ -43,9 +43,6 @@ class InstallSetDatabaseController extends Controller
             $this->envEditor->setKey('DB_DATABASE', $request->input('database_name'));
             $this->envEditor->setKey('DB_USERNAME', $request->input('database_username'));
             $this->envEditor->setKey('DB_PASSWORD', $request->input('database_password'));
-            if ($request->input('database_prefix')) {
-                $this->envEditor->setKey('DB_PREFIX', $request->input('database_prefix'));
-            }
             $this->envEditor->save();
         } catch (Exception $e) {
             return back()->withErrors($e->getMessage())->withInput();

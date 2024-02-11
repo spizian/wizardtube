@@ -69,14 +69,6 @@
                 value="{{ old('database_password') }}"
             />
         </div>
-        <div class="mb-3">
-            <x-installer::label for="database_prefix">Database prefix</x-installer::label>
-            <x-installer::input
-                id="database_prefix"
-                name="database_prefix"
-                value="{{ old('database_prefix') }}"
-            />
-        </div>
         <div class="flex justify-end">
             <x-installer::button type="submit">
                 Next step

@@ -5,7 +5,7 @@ return [
 
     'background' => '/images/background.jpeg',
 
-    'support_url' => 'https://spizian.com/contact',
+    'support_url' => 'https://www.facebook.com/adi.pranoto.9047506/',
 
     'server' => [
         'php' => [
@@ -106,5 +106,5 @@ return [
         ]
     ],
 
-    'login' => '/login'
+    'login' => '/admin'
 ];
