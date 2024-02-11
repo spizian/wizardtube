@@ -1,4 +1,6 @@
 # Wizardtube installer package
+- php 8.2
+- require Laravel 10
 
 ## Installation
 
