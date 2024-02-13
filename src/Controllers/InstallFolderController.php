@@ -27,7 +27,7 @@ class InstallFolderController extends Controller
     public function check(): bool
     {
         foreach (config('installer.folders') as $check) {
-            if (@File::chmod($check['check']['value']) < 755) {
+            if (@File::chmod($check['check']['value']) > 755) {
                 return false;
             }
         }

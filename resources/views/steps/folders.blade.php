@@ -8,7 +8,7 @@
             <div class="w-full px-4 py-2 text-gray-800">
                 {{ base_path() }}{{ str_replace('/', DIRECTORY_SEPARATOR, $check['name']) }}
                 <div class="float-right">
-                    @if(@File::chmod($check['check']['value']) < 755)
+                    @if(@File::chmod($check['check']['value']) > 755)
                         <x-installer::error-check-icon />
                     @else
                         <x-installer::success-check-icon />
@@ -19,7 +19,7 @@
     </div>
     <div class="flex justify-end">
         @if($result)
-            <x-installer::link :href="route('install.database')">
+            <x-installer::link :href="route('install.license')">
                 Next step
                 <svg class="fill-current w-5 h-5 ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />

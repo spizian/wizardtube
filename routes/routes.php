@@ -3,6 +3,7 @@
 use spizian\wizardtube\Controllers\InstallDatabaseController;
 use spizian\wizardtube\Controllers\InstallFinishController;
 use spizian\wizardtube\Controllers\InstallFolderController;
+use spizian\wizardtube\Controllers\InstallLicenseController;
 use spizian\wizardtube\Controllers\InstallIndexController;
 use spizian\wizardtube\Controllers\InstallKeysController;
 use spizian\wizardtube\Controllers\InstallMigrationsController;
@@ -20,6 +21,8 @@ Route::group([
     Route::get('/', ['as' => 'install.index', 'uses' => InstallIndexController::class]);
     Route::get('/server', ['as' => 'install.server', 'uses' => InstallServerController::class]);
     Route::get('/folders', ['as' => 'install.folders', 'uses' => InstallFolderController::class]);
+    Route::get('/license', ['as' => 'install.license', 'uses' => InstallLicenseController::class]);
+    Route::post('/license', ['as' => 'install.license', 'uses' => InstallLicenseController::class]);
     Route::get('/database', ['as' => 'install.database', 'uses' => InstallDatabaseController::class]);
     Route::post('/database', ['uses' => InstallSetDatabaseController::class]);
     Route::get('/migrations', ['as' => 'install.migrations', 'uses' => InstallMigrationsController::class]);
