@@ -18,7 +18,7 @@ class InstallLicenseController extends Controller
         $licenseKey = $request->input('licensekey');
 
         $data = [
-            'domain' => 'riora.com',
+            'domain' => $request->getHost(),
             'license_key' => $licenseKey,
         ];
 
