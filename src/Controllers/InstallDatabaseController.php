@@ -15,10 +15,9 @@ class InstallDatabaseController extends Controller
     public function __invoke(): View|Factory|Application|RedirectResponse
     {
         if (
-            ! (new InstallServerController())->check() ||
             ! (new InstallFolderController())->check()
         ) {
-            return redirect()->route('install.folders');
+            return redirect()->route('install.license');
         }
 
         return view('installer::steps.database');

@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Installation - {{ config('app.name', 'Laravel') }}</title>
     <link rel="shortcut icon" href="{{ config('installer.icon') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
     *,:after,:before{
         box-sizing:border-box;
